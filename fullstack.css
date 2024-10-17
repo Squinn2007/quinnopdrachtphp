@@ -1,0 +1,151 @@
+/* Algemene stijlen */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("blauwegolven.jpg");
+    background-repeat: no-repeat;
+    background-size: 150% 200%;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+
+h2 {
+    color: #444;
+    margin-top: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 275px;
+    font-size: 20px;
+}
+/* Stijl voor de formulieren */
+form {
+    
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* margin: auto; */
+    margin-bottom: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 60px;
+
+}
+
+
+/* Input-velden en selectievakjes */
+input[type="text"], [type="password"], [type="email"],  input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Labels */
+p {
+    margin: 0 0 5px;
+    font-weight: bold;
+}
+
+/* Knoppen */
+button {
+    animation-duration: 4s;
+    animation-name: example;
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+@keyframes example{
+    from {background-color: #ffffff;}
+    to {background-color: #5cb85c;}
+  }
+
+/* Hover-stijl voor knoppen */
+button:hover {
+    background-color: #4cae4c;
+}
+#reset {
+    background-color: #d9534f;  
+}
+#reset:hover {
+    background-color: #c9302c;
+}
+
+/* Reset-knop stijl */
+form[method="post"]:last-of-type button {
+    background-color: #d9534f;
+}
+
+form[method="post"]:last-of-type button:hover {
+    background-color: #c9302c;
+}
+
+/* Tabel stijl */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Afwisselende achtergrondkleur voor de tabelrijen */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Stijl voor fout- en succesberichten */
+p[style*='color:green'] {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+p[style*='color:red'] {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    form, table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="date"], select {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
